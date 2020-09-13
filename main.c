@@ -24,9 +24,8 @@ int main(int argc, char* argv[]) {
 	char* argBuf = NULL;
 	argv[BUFFER_SIZE];
 	argc = 0;
-	while (true)
+	while (fgets(input, BUFFER_SIZE, stdin))
 	{
-		fgets(input, BUFFER_SIZE, stdin);
 		char* token = strtok_r(input, "\n;", &tokenBuf);
 		while (token != NULL)
 		{
